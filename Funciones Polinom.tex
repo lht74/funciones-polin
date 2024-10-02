@@ -1,0 +1,83 @@
+
+\documentclass[12pt]{exam}
+\usepackage[spanish]{babel}
+\usepackage{amsmath} % Para notación matemática
+\usepackage{multicol} % Para crear columnas
+\usepackage[left=10mm, right= 20mm, bottom= 20mm, top= 35mm, headsep=10mm, headheight=0mm]{geometry}
+\usepackage{setspace}  
+\usepackage{graphicx}
+\renewcommand\partlabel{\thepartno)}
+%%% DEFINICIONES PARA MODIFICAR APARIENCIA DEL ENCABEZADO%%%
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@fullhead}{\hrule}{\hrule\vskip2pt\hrule height 2pt}{}{}
+\patchcmd{\run@fullhead}{\hrule}{\hrule\vskip2pt\hrule height 2pt}{}{}
+\makeatother
+\pagestyle{headandfoot}
+%\runningheadrule
+\firstpageheadrule
+\firstpageheader {\escuela \\ Curso: \curso}
+                 {MATEMÁTICA \\ \tpnombre}
+                  {\lugar \\ \today}  
+%\runningheader{\includegraphics[width=0.1\textwidth]{logo.png}}
+%{Matemática:Trabajo Práctico}
+%{\today}
+\firstpagefooter{Prof: \textit{Lucas H.Trejo}}{}{\thepage}
+\runningfooter{Prof: \textit{Lucas H.Trejo}}{}{Pag. \thepage\ of \numpages}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                       %%% REEMPLAZAR LOS PARÁMETROS AQUÍ    %%  
+\newcommand{\escuela}{EES Nº 32}                                             %%             
+\newcommand{\curso}{  5º 3ª}                                                  %%             
+\newcommand{\tpnombre}{Funciones polinómicas}                     %%
+\newcommand{\lugar}{La Plata}                                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{questions}
+    
+    \question Investigar:
+    \begin{parts}         
+      
+        \part  ¿ Cuáles son las características de los gráficos de las funciones polinómicas?
+        \part  ¿Qué usos prácticos tienen las funciones polinómicas?
+         
+    \end{parts}
+    
+    \question Con ayuda de Geogebra u otro software matemático, dibujar una representación grafica aproximada
+    para cada función:
+    \begin{parts}
+        
+    
+    \part \( f(x)=(x-2)(x+3) \)
+    \part  \( f(x)=(x+3)(2x-1)(x-2) \)
+    \part   \( f_ {(x)} $ = $ (x-2)^ {2}   (x+1)^ {2} \) 
+    \part   \( f_ {(x)} $ = $ (x+1)^ {3}  (x-2) \)
+\end{parts}
+   
+    \question Para cada una de las funciones del ejercicio anterior, indicar:
+    \begin{parts}
+        
+    \part Grado de la función.    
+    \part   Raíces y orden de multiplicidad de cada una de ellas.
+    \part   Punto de intersección con el eje $y$.
+    \part  Conjunto de positividad,  $C^+$.
+    \part  Conjunto de negatividad, $C^-$. 
+\end{parts}
+
+\end{questions}
+ 
+
+
+ 
+ %  \begin{figure}[h]
+ %      \centering
+ %      \includegraphics[width=1 \linewidth]{figura.png}     
+ %  \end{figure}
+
+ 
+
+\end{document}
